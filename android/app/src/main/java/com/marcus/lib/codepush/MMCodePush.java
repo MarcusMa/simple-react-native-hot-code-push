@@ -9,8 +9,11 @@ import com.marcus.lib.codepush.manager.SettingManager;
 import com.marcus.lib.codepush.manager.UpdateManager;
 import com.marcus.lib.codepush.util.UPLogUtils;
 
-/**
- * Created by marcus on 17/3/23.
+/*!
+ * Copyright(c) 2009-2017 Marcus Ma
+ * E-mail:maji1991@sina.com
+ * GitHub : https://github.com/MarcusMa
+ * MIT Licensed
  */
 
 public class MMCodePush {

@@ -2,8 +2,11 @@ package com.marcus.demo;
 
 import com.marcus.lib.codepush.MMBaseActivity;
 
-/**
- * Created by marcus on 17/3/29.
+/*!
+ * Copyright(c) 2009-2017 Marcus Ma
+ * E-mail:maji1991@sina.com
+ * GitHub : https://github.com/MarcusMa
+ * MIT Licensed
  */
 
 public class DemoRNActivity extends MMBaseActivity {

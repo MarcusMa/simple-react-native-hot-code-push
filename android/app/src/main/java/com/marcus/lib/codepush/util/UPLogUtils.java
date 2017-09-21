@@ -2,8 +2,11 @@ package com.marcus.lib.codepush.util;
 
 import android.util.Log;
 
-/**
- * Created by marcus on 17/3/29.
+/*!
+ * Copyright(c) 2009-2017 Marcus Ma
+ * E-mail:maji1991@sina.com
+ * GitHub : https://github.com/MarcusMa
+ * MIT Licensed
  */
 
 public class UPLogUtils {

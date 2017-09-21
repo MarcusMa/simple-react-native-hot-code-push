@@ -7,8 +7,11 @@ import java.io.IOException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-/**
- * Created by marcus on 17/4/28.
+/*!
+ * Copyright(c) 2009-2017 Marcus Ma
+ * E-mail:maji1991@sina.com
+ * GitHub : https://github.com/MarcusMa
+ * MIT Licensed
  */
 
 public class MMAsyncTaskManager {

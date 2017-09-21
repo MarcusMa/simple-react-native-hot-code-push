@@ -13,8 +13,11 @@ import java.io.PrintWriter;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
-/**
- * Created by marcus on 17/3/23.
+/*!
+ * Copyright(c) 2009-2017 Marcus Ma
+ * E-mail:maji1991@sina.com
+ * GitHub : https://github.com/MarcusMa
+ * MIT Licensed
  */
 
 public class FileUtils {

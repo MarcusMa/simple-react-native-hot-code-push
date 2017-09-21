@@ -1,18 +1,18 @@
 package com.marcus.lib.codepush.manager;
 
-/**
- * Created by marcus on 17/4/24.
- */
-
 import com.facebook.react.ReactPackage;
 import com.marcus.lib.codepush.MMCodePushConstants;
 
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * 使用这个单例来存储一些初始化时的个性参数
+/*!
+ * Copyright(c) 2009-2017 Marcus Ma
+ * E-mail:maji1991@sina.com
+ * GitHub : https://github.com/MarcusMa
+ * MIT Licensed
  */
+
 public class SettingManager {
 
     private static SettingManager instance = null;

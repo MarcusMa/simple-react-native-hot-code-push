@@ -6,8 +6,11 @@ import com.marcus.lib.codepush.util.UPLogUtils;
 
 import java.io.Serializable;
 
-/**
- * Created by marcus on 17/4/10.
+/*!
+ * Copyright(c) 2009-2017 Marcus Ma
+ * E-mail:maji1991@sina.com
+ * GitHub : https://github.com/MarcusMa
+ * MIT Licensed
  */
 
 public class BusinessInfoResult implements Serializable {

@@ -4,8 +4,11 @@ import com.google.gson.annotations.SerializedName;
 import com.marcus.lib.codepush.MMCodePushConstants;
 import com.marcus.lib.codepush.util.UPLogUtils;
 
-/**
- * Created by marcus on 17/4/10.
+/*!
+ * Copyright(c) 2009-2017 Marcus Ma
+ * E-mail:maji1991@sina.com
+ * GitHub : https://github.com/MarcusMa
+ * MIT Licensed
  */
 
 public class RemotePatchInfoResult {

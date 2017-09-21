@@ -13,6 +13,13 @@ import com.marcus.lib.codepush.MMCodePushConstants;
 import com.marcus.lib.codepush.manager.CheckForUpdateCallback;
 import com.marcus.rn.demo.demo.R;
 
+/*!
+ * Copyright(c) 2009-2017 Marcus Ma
+ * E-mail:maji1991@sina.com
+ * GitHub : https://github.com/MarcusMa
+ * MIT Licensed
+ */
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button mBtn;

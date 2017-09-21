@@ -40,8 +40,11 @@ import java.util.TimerTask;
 
 import static com.marcus.lib.codepush.MMCodePushConstants.DEFAULT_COMMON_PATCH_PATCH;
 
-/**
- * Created by marcus on 17/3/28.
+/*!
+ * Copyright(c) 2009-2017 Marcus Ma
+ * E-mail:maji1991@sina.com
+ * GitHub : https://github.com/MarcusMa
+ * MIT Licensed
  */
 
 public class MMBaseActivity extends Activity implements DefaultHardwareBackBtnHandler, UpdateManager.UPDownloadTaskListener {

@@ -5,8 +5,11 @@ import android.os.Bundle;
 import com.marcus.lib.codepush.MMCodePushConstants;
 import com.marcus.lib.codepush.manager.SettingManager;
 
-/**
- * Created by marcus on 17/3/23.
+/*!
+ * Copyright(c) 2009-2017 Marcus Ma
+ * E-mail:maji1991@sina.com
+ * GitHub : https://github.com/MarcusMa
+ * MIT Licensed
  */
 
 public class BusinessPatch {
