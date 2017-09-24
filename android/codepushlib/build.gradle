@@ -1,35 +1,51 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
+apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
+
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
+
     defaultConfig {
-        applicationId "com.marcus.rn"
         minSdkVersion 16
-        targetSdkVersion 22
+        targetSdkVersion 25
         versionCode 1
         versionName "1.0"
+
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
         ndk {
             abiFilters "armeabi-v7a", "x86"
         }
 
+        externalNativeBuild {
+            cmake {
+                cppFlags "-std=c++11"
+                arguments "-DANDROID_TOOLCHAIN=clang"
+                abiFilters 'x86', 'x86_64', 'armeabi', 'armeabi-v7a', 'arm64-v8a'
+            }
+        }
+
         packagingOptions {
             exclude "lib/arm64-v8a/libgnustl_shared.so"
         }
     }
-    buildTypes {
 
+    buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
-
-    }
-    configurations.all {
-        resolutionStrategy.force 'com.google.code.findbugs:jsr305:1.3.9'
     }
 
+    android {
+        useLibrary 'org.apache.http.legacy'
+    }
+
+    externalNativeBuild {
+        cmake {
+            path "src/main/cpp/CMakeLists.txt"
+        }
+    }
 }
 
 dependencies {
@@ -38,6 +54,7 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile 'com.android.support:appcompat-v7:25.1.1'
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'com.facebook.react:react-native:0.40.0'
     testCompile 'junit:junit:4.12'
-    compile project(':codepushlib')
 }

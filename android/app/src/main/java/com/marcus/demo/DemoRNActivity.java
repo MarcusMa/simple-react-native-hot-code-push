@@ -1,6 +1,6 @@
 package com.marcus.demo;
 
-import com.marcus.lib.codepush.MMBaseActivity;
+import com.marcus.reactnative.lib.MMBaseActivity;
 
 /*!
  * Copyright(c) 2009-2017 Marcus Ma

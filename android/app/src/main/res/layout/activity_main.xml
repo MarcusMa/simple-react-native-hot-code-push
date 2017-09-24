@@ -14,14 +14,20 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="UnionPay React Native演示DEMO"
+        android:text="React Native Hot Code Push DEMO"
         android:id="@+id/textView" />
+
+    <Button
+        android:id="@+id/btn_checkforupdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check For Update" />
 
     <Button
         android:id="@+id/btn_test"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Business"
+        android:text="Go RN Business Page"
         android:layout_weight="0.17" />
 
 </LinearLayout>
