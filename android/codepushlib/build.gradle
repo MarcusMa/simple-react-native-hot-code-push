@@ -1,5 +1,4 @@
 apply plugin: 'com.android.library'
-apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
 
 android {
     compileSdkVersion 25

@@ -59,8 +59,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             mContext.startActivity(intent);
         }
         if (v.getId() == R.id.btn_checkforupdate) {
-            UPLogUtils.d(TAG,"check fo update btn clicked.");
-            if(null != codePush){
+            UPLogUtils.d(TAG, "check fo update btn clicked.");
+            if (null != codePush) {
                 codePush.checkForUpdate(new CheckForUpdateCallback() {
                     @Override
                     public void onResult(boolean isSuccess, String errorMessage) {
@@ -72,9 +72,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         }
                     }
                 });
-            }
-            else{
-                Toast.makeText(mContext,"MMCodePush Object is not init. You Should init MMCodePush Object firstly.",Toast.LENGTH_LONG);
+            } else {
+                Toast.makeText(mContext, "MMCodePush Object is not init. You Should init MMCodePush Object firstly.", Toast.LENGTH_LONG);
             }
 
         }

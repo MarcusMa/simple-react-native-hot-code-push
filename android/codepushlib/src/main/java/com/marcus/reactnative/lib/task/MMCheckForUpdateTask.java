@@ -9,15 +9,15 @@ import com.marcus.reactnative.lib.MMCodePushConstants;
 import com.marcus.reactnative.lib.base.MMErrorCode;
 import com.marcus.reactnative.lib.data.CheckForUpdateResponse;
 import com.marcus.reactnative.lib.manager.SettingManager;
-import com.marcus.reactnative.lib.util.CommonUtils;
 import com.marcus.reactnative.lib.util.UPLogUtils;
 
 import java.io.BufferedOutputStream;
-import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
+
+import static com.marcus.reactnative.lib.util.CommonUtils.streamToString;
 
 /*!
  * Copyright(c) 2009-2017 Marcus Ma
@@ -125,23 +125,5 @@ public class MMCheckForUpdateTask extends AsyncTask<String, Integer, CommonTaskR
         void onSuccess(CheckForUpdateResponse response);
 
         void onError(int errorCode, String errorMsg);
-    }
-
-    public static String streamToString(InputStream is) {
-        try {
-            ByteArrayOutputStream baos = new ByteArrayOutputStream();
-            byte[] buffer = new byte[1024];
-            int len = 0;
-            while ((len = is.read(buffer)) != -1) {
-                baos.write(buffer, 0, len);
-            }
-            baos.close();
-            is.close();
-            byte[] byteArray = baos.toByteArray();
-            return new String(byteArray);
-        } catch (Exception e) {
-            e.printStackTrace();
-            return "";
-        }
     }
 }

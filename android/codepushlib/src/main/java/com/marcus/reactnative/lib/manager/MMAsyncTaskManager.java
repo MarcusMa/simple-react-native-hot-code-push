@@ -3,9 +3,7 @@ package com.marcus.reactnative.lib.manager;
 import android.os.AsyncTask;
 import android.os.Build;
 
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 

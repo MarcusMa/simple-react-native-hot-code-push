@@ -170,7 +170,7 @@ public class MMBaseActivity extends Activity implements DefaultHardwareBackBtnHa
             isWaitingReactViewLoad = false;
         } else {
             mReactRootView = null;
-            mLoadReactViewErrorMsg ="Error in rebuild bundle file with bsdiff";
+            mLoadReactViewErrorMsg = "Error in rebuild bundle file with bsdiff";
             retError = true;
         }
         return retError;
